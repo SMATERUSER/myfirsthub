@@ -1,0 +1,80 @@
+.pill-nav-toolbar {
+  display: inline-flex;
+}
+
+.pnt-nav {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  background: var(--base, #1a1a2e);
+  border-radius: 9999px;
+  padding: 3px;
+}
+
+.pnt-list {
+  display: flex;
+  align-items: stretch;
+  gap: 3px;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pnt-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 18px;
+  background: var(--pill-bg, #ffffff);
+  color: var(--pill-text, #1a1a2e);
+  text-decoration: none;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.pnt-circle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-radius: 50%;
+  background: var(--base, #1a1a2e);
+  z-index: 1;
+  display: block;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.pnt-label-stack {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  z-index: 2;
+}
+
+.pnt-label {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 1;
+  will-change: transform;
+}
+
+.pnt-label-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--hover-text, #ffffff);
+  z-index: 3;
+  display: inline-block;
+  will-change: transform, opacity;
+}

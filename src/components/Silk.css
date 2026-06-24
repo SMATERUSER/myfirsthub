@@ -1,0 +1,4 @@
+﻿.silk-wrap { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; }
+.silk-wrap canvas { width: 100% !important; height: 100% !important; display: block; }
+.silk-wrap > div { width: 100% !important; height: 100% !important; }
+
